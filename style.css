@@ -1,213 +1,276 @@
-*{
+/* css typography */
+* {
     margin: 0;
     padding: 0;
     outline: 0;
+    box-sizing: border-box;
 }
-.default-bg{
-    background:#EBF0F1 ;
-}
-/* header-section */
 
-.header-section {
-    background: #f9f8f8;
-}
-.header-left a {
+.clearfix::after {
+    content: "";
     display: block;
-    width: 130px;
-    margin-top: -2px;
-    margin-top: -18px;
-    line-height: 25px;
+    clear: both;
 }
-.header-left a img {
-    width: 130px;
-    height: 83px;
-}
-.header-right ul {
-    margin-bottom: 0;
-    text-align: right;
-}
-.header-right ul li {
-    display: inline-block;
-   
-}
-.header-right ul li a {
-    display: block;
-    text-decoration: none;
-    line-height: 65px;
-    border-right: 1px solid #b3b0b0;
-    padding: 0 15px;
-}
-.header-right ul li:first-child{
-    border-left:1px solid #b3b0b0; 
-}
-/* Banner Section */
-.banner-section{
-    background: url('img/apple-1282241.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 200px 0;
-}
-.banner-text p {
-    background: aliceblue;
-    padding: 10px;
-    width: 290px;
-    margin: auto;
-    margin-top: 12px;
-    font-size: 18px;
-    border-radius: 10px;
-    font-weight: 500;
-    color: blueviolet;
-}
-.banner-text h3 {
-    color: #30302f;
-    background: white;
-    width: 340px;
-    display: inline-block;
-    padding: 7px;
-    border-radius: 8px;
-}
-/* service section */
-.service-sectionm{}
-.same-service-section {
-    border: 1px solid #ddd;
-    padding: 30px 0;
-}
-.same-service-section span {
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin: auto;
-    background: #fab3fa;
-    color: blue;
-    font-size: 30px;
-    border-radius: 20px 0px 20px 0px;
-}
-.same-service-section h2 {
-    font-size: 23px;
-    padding: 5px 0;
-    margin-top: 15px;
-}
-/* Notice Section */
-.notice-item{}
-.notice-item h2{}
-.notice-item ul {
-    padding: 0;
-    list-style-type: none;
+
+.center {
     text-align: center;
 }
-.notice-item ul li {
-    padding: 10px;
-    border-radius: 5px;
-    background: #e2e2e2;
-    margin-bottom: 7px;
+
+.left {
+    text-align: left;
 }
-.notice-item ul li a {
-    display: block;
-    text-decoration: none;
-    font-size: 17px;
-}
-/* footer-section */
-.footer-section{
-    background: #000;
-}
-.footer-left{}
-.footer-left p {
-    font-size: 20px;
-    line-height: 45px;
-    margin-top: 12px;
-}
-.footer-left a{
-    text-decoration: none;
-}
-.footer-right {
+
+.right {
     text-align: right;
 }
-.footer-right ul {
-    list-style: none;
-    padding: 0;
+
+.float-left {
+    float: left;
 }
-.footer-right ul li {
+
+.float-right {
+    float: right;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+li {
     display: inline-block;
 }
-.footer-right ul li a {
-    display: block;
-    padding: 0 10px;
-    font-size: 30px;
-    color: white;
-    margin-top: 10px;
-    line-height: 45px;
+
+/* navbar Section start */
+.navbar-section {
+    background: #EAEAEA;
+    height: 9em;
+    line-height: 9em;
 }
 
-
-.responsive-wide{}
-.responsive-content{}
-.responsive-img{}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.navbar-left {
+    width: 30%;
+    height: 9em;
+    line-height: 13em;
+}
+
+.navbar-left img {
+    width: 7em;
+}
+
+.navbar-right {
+    margin-left: auto;
+    text-transform: capitalize;
+}
+
+.navbar-right ul li {
+    padding-left: 1em;
+}
+
+.home a {
+    border-bottom: 2px solid #444744;
+}
+
+.navbar-right ul li a {
+    font-size: 1.2em;
+    padding-bottom: .3em;
+    transition: all .2s ease-in-out;
+
+}
+
+.navbar-right ul li a:hover {
+    border-bottom: 2px solid #444744;
+}
+
+.button a {
+    background: #005672;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    padding: .8em 1em;
+    display: block;
+    height: 2em;
+    line-height: 0em;
+    padding-top: 19px;
+    transition: all .4s ease-in-out;
+    color: white;
+    font-weight: bold;
+}
+
+.button a:hover {
+    border-bottom: 0 !important;
+    background: #0066F9;
+
+    color: white;
+    font-weight: bold;
+}
+
+/* footer saection start */
+.footrer-section {}
+
+.footer-content {}
+
+.footer-icon {}
+
+.footer-icon ul {}
+
+.footer-icon ul li {}
+
+.footer-icon ul li a {}
+
+.footer-icon ul li a span {
+    display: block;
+    font-size: 2em;
+    color: #005672;
+    padding-right: 0.3em;
+}
+
+.footer-text {}
+
+.footer-text p {
+    font-size: 1.3em;
+}
+.footer-text p:first-child {
+    padding: .5em 0;
+    
+}
+.footer-text p a {
+    text-decoration: underline;
+}
+
+/* footer saection end */
+
+/* post-secton start */
+.post-secton{}
+.post-content{}
+.post-content h2 {
+    padding: 1em 0;
+    font-size: 2.7rem;
+}
+.post-content p {
+    font-size: 1.4em;
+}
+.post-card {
+    margin-bottom: 1em;
+}
+.post-card p{ }
+.card{
+    width: 48%;
+    position: relative;
+}
+.card-img {}
+.card-img a {}
+.card-img a img {
+    width: 97%;
+    height: 20em;
+}
+.getsby {
+    position: absolute;
+    width: 6em;
+    height: 2.3em;
+    line-height: 2.3em;
+    text-align: center;
+    background: #005672;
+    left: 14em;
+    bottom: 8.5em;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+}
+.card-text {
+    width: 97%;
+    background: #eee;
+    margin-top: -4px;
+    padding: 1em;
+    font-size: 1.1em;
+    color: #333;
+}
+.card-text span{}
+.card-text h3 {
+    padding: .5em 0;
+}
+.all-post {
+    margin-top: 1em;
+    display: block;
+    font-size: 1.2em;
+    text-decoration: underline;
+
+}
+.footer-text{}
+.about-contents{}
+.footer-text p{}
+.footer-text p a{}
+
+/* post-secton end */
+
+/* About Page style start */
+.about-contents{}
+.about-text{}
+.about-text h1 {
+    padding: 1em 0;
+    font-size: 2.4em;
+}
+.about-text h2 {
+    padding-bottom: 1em;
+}
+.about-text p {
+    padding-bottom: .8em;
+    font-size: 1.3em;
+}
+.about-text ul{}
+.about-text ul li {
+    padding-bottom: .9em;
+    font-size: 1.3em;
+    display: block;
+}
+.about-text ul li a{}
+/* About Page style End */
+
+
+/* contact page start */
+.conatct-section{}
+.contact-content {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+.contact-content h2 {
+    font-size: 2em;
+    padding-bottom: .5em;
+}
+.contact-content p {
+    padding: 0 2em;
+    padding-bottom: 1em;
+}
+.form{}
+.form textarea {
+    width: 100%;
+    margin-left: 55px;
+    resize: none;
+}
+.form label {
+    margin-left: -38em;
+}
+.form input {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-left: 60px;
+}
+.conatct-section{}
+.conatct-section{}
+/* contact page start */
